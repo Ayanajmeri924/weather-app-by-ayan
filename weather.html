@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1><i class="fas fa-cloud-sun"></i> Weather App</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <div id="suggestions" class="suggestions"></div>
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div id="weather-info" class="weather-info">
+            <h2 id="city-name">City Name</h2>
+            <p id="weather-description">Weather description</p>
+            <div class="weather-details">
+                <p id="temperature"><i class="fas fa-thermometer-half"></i> Temperature: 0°C</p>
+                <p id="rain-percentage"><i class="fas fa-cloud-rain"></i> Chance of Rain: 0%</p>
+                <p id="humidity"><i class="fas fa-tint"></i> Humidity: 0%</p>
+                <p id="wind-speed"><i class="fas fa-wind"></i> Wind Speed: 0 km/h</p>
+            </div>
+        </div>
+        
+        <!-- Hourly Forecast Section -->
+<div id="forecast-hourly" class="forecast-hourly">
+    <h3>Hourly Forecast</h3>
+    <div id="hourly-forecast" class="forecast-container">
+        <table border="2px" id="hourly-forecast">
+            <thead>
+                <tr <hr>
+                    <th>Date</th>
+                    <th>Temperature</th>
+                    <th>Condition</th>
+                    <th>Chance of Rain</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Weekly forecast rows will be added here dynamically -->
+            </tbody>
+        </table>
+        <!-- Hourly forecast items will be added here dynamically -->
+    </div>
+</div>
+
+<!-- 7-Day Forecast Section -->
+<div id="forecast-week" class="forecast-week">
+    <h3>7-Day Forecast</h3>
+    <div id="weekly-forecast" class="forecast-container">
+        <table border="2px" id="weekly-forecast">
+            <thead>
+                <tr <hr>
+                    <th>Date</th>
+                    <th>Temperature</th>
+                    <th>Condition</th>
+                    <th>Chance of Rain</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Weekly forecast rows will be added here dynamically -->
+            </tbody>
+        </table>
+        <!-- Weekly forecast items will be added here dynamically -->
+    </div>
+</div>
+
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
